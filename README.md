@@ -17,6 +17,12 @@ git clone https://github.com/rosoporto/todo_note.git
 cd todo_note
 ```
 
+### Создание и активация виртуального окружения
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
 ### Установите зависимости с помощью pip:
 
 ```bash
