@@ -1,0 +1,55 @@
+# Исключить файл с чувствительными данными
+.env
+
+# Исключить виртуальное окружение
+venv/
+env/
+.venv/
+__pypackages__/
+
+# Исключить файлы, сгенерированные Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Исключить файлы, сгенерированные Jupyter Notebook
+.ipynb_checkpoints
+
+# Исключить файлы, сгенерированные IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Исключить файлы, сгенерированные системой контроля версий
+.git/
+
+# Исключить файлы, сгенерированные тестами
+*.coverage
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+
+# Исключить файлы, сгенерированные Sphinx
+docs/_build/
+
+# Исключить файлы, сгенерированные Django
+*.log
+*.pot
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+media/
+
+# Исключить файлы, сгенерированные Flask
+instance/
+.webassets-cache
+
+# Исключить файлы, сгенерированные другими инструментами
+.DS_Store
+Thumbs.db
