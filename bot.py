@@ -17,7 +17,7 @@ class NoteBot:
         self.token = token
         self.updater = Updater(token)
         self.dispatcher = self.updater.dispatcher
-        self.notes_file = 'notes.csv'
+        self.notes_file = 'data/notes.csv'
 
         # Загрузим заметки
         self.notes = self.load_notes()
