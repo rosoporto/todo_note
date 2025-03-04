@@ -1,15 +1,8 @@
-FROM python:3.9-slim
-
-RUN apt-get update && apt-get install -y \
-    python3-pip \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN python -m pip install --upgrade pip
-
+FROM python:3.11-alpine
+RUN pip install --upgrade pip
+ENV PYTHONUNBUFFERED=1
 WORKDIR /app
-
-COPY . /app
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-CMD ["python", "bot.py"]
+COPY bot.py .
+CMD ["python3", "bot.py"]
